@@ -1,6 +1,11 @@
 const workoutModel = require('../models/workoutModel')
 
 
+
+
+//get all workout 
+
+
 //get single workout 
 
 
@@ -16,6 +21,11 @@ const createWorkout = async (req , res) => {
         res.status(400).json({error : error.message})
     }
 }
+
+//delete workout 
+
+
+//update workout
 
 module.exports = {
     createWorkout,
