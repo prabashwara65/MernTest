@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const getWorkouts = async (req , res) => {
 
     const workouts = await workoutModel.find({}).sort({createdAt: -1})
-    res.status(200).json({message: "get all success" , workouts})
+    res.status(200).json( workouts )
 }
 
 //get single workout 
