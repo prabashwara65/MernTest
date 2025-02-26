@@ -11,11 +11,12 @@ const getWorkouts = async (req , res) => {
 //get single workout 
 const getWorkout = async (req , res) => {
 
-    const { id } = req.body;
+    const { id } = req.params;
 
     const workout = await workoutModel.findById(id)
 
     if(!workout){
+        const error = new Error('Workout not found');
         return res.status(404).json({error: error.message})
     }
 
