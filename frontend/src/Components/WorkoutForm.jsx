@@ -7,7 +7,7 @@ const WorkoutForm = () => {
     const [reps , setReps] = useState('');
 
     return (
-        <form>
+        <form className="border-4">
             <h3>Add new Workout</h3>
 
             <label>Excercise Title</label>
@@ -17,18 +17,18 @@ const WorkoutForm = () => {
                 value={title}
             />
 
-            <label>Excercise Title</label>
+            <label>Excercise Load</label>
             <input 
                 type="text"
-                onChange={(e) => setTitle(e.target.value)}
-                value={title}
+                onChange={(e) => setLoad(e.target.value)}
+                value={load}
             />
-            
-            <label>Excercise Title</label>
+
+            <label>Excercise Reps</label>
             <input 
                 type="text"
-                onChange={(e) => setTitle(e.target.value)}
-                value={title}
+                onChange={(e) => setReps(e.target.value)}
+                value={reps}
             />
 
         </form>
