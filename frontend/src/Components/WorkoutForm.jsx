@@ -55,6 +55,7 @@ const WorkoutForm = () => {
                 type="number"
                 onChange={(e) => setLoad(e.target.value)}
                 value={load}
+                
             />
 
             <label>Excercise Reps</label>
